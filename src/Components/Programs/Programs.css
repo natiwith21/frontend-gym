@@ -1,0 +1,84 @@
+.Programs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0.2rem;
+  background: black;
+  background-image: linear-gradient(to right, black, rgb(43, 41, 41));
+}
+.programs-header {
+  margin-top: 4rem;
+  display: flex;
+  gap: 5rem;
+  font-weight: bold;
+  font-size: 3rem;
+  justify-content: center;
+  color: gray;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.gray {
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: gray;
+}
+
+.program-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  gap: 4rem;
+}
+
+.pic {
+  width: 40px;
+  height: 40px;
+}
+.align {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: gray;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 5%;
+  color: #fff;
+}
+.join {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.bold {
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.small {
+  font-size: 12px;
+}
+.align:hover {
+  background-image: linear-gradient(to right, aqua, #0000ff);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .programs-header {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .program-categories {
+    flex-direction: column;
+  }
+}
